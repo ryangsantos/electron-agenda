@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <!-- Evita ataques de Cross Site Scripting (Injeção de dados) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <title>Tutorial Electron</title>
+</head>
+
+<body>
+    <main>
+        
+    </main>
+    <img src="../public/img/dboff.png" alt="status do banco" id="status">
+    <h1>Lista de Contatos</h1>
+
+    <form id="frmTarefas">
+        <input type="text" id="txtTarefa" placeholder="Nome">
+        <input type="number" id="txtDescricao" placeholder="Telefone">
+        <input type="text"  id="txtEmail" placeholder="E-mail">
+        <input type="submit" value="Salvar">
+    </form>
+<br>
+    <table border="1" >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th colspan="2">Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="agendaTarefas">
+
+        </tbody>
+    </table>
+
+
+    <!-- Passo 4.1 Lista de tarefas pendentes (O JavaScript vai preencher automaticamente a ul) -->
+    <ul id="listaTarefas"></ul>
+
+
+    <!-- Exemplo de uso do preload -->
+    <div id="mensagem"> </div>
+
+    <!-- JavaScript -->
+    <script src="../public/js/renderer.js"></script>
+</body>
+
+</html>

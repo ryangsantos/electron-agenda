@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+table{
+    border: 2px solid black;
+}
+
+#botao{
+    position: relative;
+    /*left: 450px;
+    top: -25px;*/
+}
+
+td{
+    padding: 8px;
+    text-align: center;
+}
+
+h1{text-align: center;}
+
+
+button{
+    border-radius: 12px 12px 12px 12px;
+    padding: 6px;
+}
