@@ -1,0 +1,36 @@
+1º npm init
+package name [ENTER]
+version      [ENTER]
+description  Tutorial Electron
+entry point  main.js
+author:     Andres
+license:    MIT
+
+npm run test 
+
+2º Instalação do Electron
+Usar o comando:
+    > npm install electron --save-dev
+3º Na raiz, criar arquivo main.js
+4º Configurar o script do package.json para iniciar o Electron  
+
+"scripts": {
+    "start": "electron ."
+  },
+
+Executar o Electron pelo console: npm run start
+5º Configurar o main.js
+
+Estrutura de pastas de acordo com o Modelo MVC (2 Camadas - Views e Models)
+Pasta "public" é usada para armazenar os recursos da Camada Views (Documentos HTML)
+
+6º Setup do Ambiente (Janelas) //Está comentado no código
+
+7º Processos
+- Front-end e Back-end
+- Preload --> (Pré-carregamento de um script.js pra injetar no Index.html) Informação da máquina ou do usuário aparecer
+      -> Criar l arquivo preload.js na raíz e modificar o Main
+- ipcMain e ipcRenderer
+- Assincronismo   
+    async
+    await
